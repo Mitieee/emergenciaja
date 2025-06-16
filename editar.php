@@ -113,7 +113,7 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <a href="cadastro.php" style="text-decoration: none; font-size: 1.5em;">Criar conta</a> <br>
+           <img src="imagem/emergenciaja.png" alt="emergenciaja" style="width: 150px; height: 80px; ">
         <h2>Editar Dados</h2>
         <div class="email">
             E-mail: <?php echo htmlspecialchars($usuario['email']); ?>
@@ -167,6 +167,8 @@ $conn->close();
             </div>
             <button type="submit">Salvar Alterações</button>
         </form>
+          <br> <img src="imagem/sair.png" alt="sair"  style="width: 20px; height: 20px; ">
+           <a href="conta.php" style="text-decoration: none; font-size: 1.5em;">Sair</a>
     </div>
     <script>
         function validarFormulario() {

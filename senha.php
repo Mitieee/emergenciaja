@@ -45,6 +45,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+                .grupo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .grupo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
         input {
             width: 100%;
             padding: 15px;
@@ -72,15 +82,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="container">
+      <img src="imagem/emergenciaja.png" alt="emergenciaja" style="width: 150px; height: 80px; ">
         <h2>Recuperar Senha</h2>
         <form method="POST">
-            <input type="email" name="email" placeholder="Digite seu e-mail" required>
-            <input type="password" name="senha" placeholder="Digite nova senha" required>
+            <div class="grupo">
+                <img src="imagem/email.png" alt="E-mail">
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="grupo">
+                <img src="imagem/senha.png" alt="Senha">
+                <input type="password" name="senha" id="senha" placeholder="Digite a nova senha" required>
+            </div>
             <button type="submit">Enviar</button>
-        </form>
+        </form><br>  <a href="conta.php" style="display: inline-block; color: black; text-decoration: none;">Voltar para o login</a>
         <?php if (isset($mensagem)): ?>
             <div class="mensagem"><?php echo $mensagem; ?></div>
-          <br>  <a href="conta.php" style="display: inline-block; color: black; text-decoration: none;">Voltar para o login</a>
         <?php endif; ?>
     </div>
         <div vw class="enabled">

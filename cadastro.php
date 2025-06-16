@@ -101,30 +101,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             color: red;
             margin-bottom: 15px;
         }
+                p{color: gray;
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="conta.php" style="text-decoration: none; font-size: 1.5em; color: green;">Fazer login</a><br><h2>Cadastro</h2>
+   <img src="imagem/emergenciaja.png" alt="emergenciaja" style="width: 150px; height: 80px; ">
+  <h2>Crie sua conta</h2>
         <?php if (!empty($error)): ?>
             <div class="error"><?php echo $error; ?></div>
         <?php endif; ?>
         <form action="cadastro.php" method="POST" onsubmit="return validarFormulario()">
             <div class="grupo">
                 <img src="imagem/email.png" alt="E-mail">
-                <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
             </div>
             <div class="grupo">
                 <img src="imagem/senha.png" alt="Senha">
-                <input type="password" name="senha" id="senha" placeholder="Sua senha" required>
+                <input type="password" name="senha" id="senha" placeholder="Digite a senha" required>
             </div>
             <div class="grupo">
                 <img src="imagem/telefone.png" alt="Telefone">
-                <input type="tel" name="telefone" id="telefone" placeholder="00000000000" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu número de telefone" required>
             </div>
             <div class="grupo">
                 <img src="imagem/nome.png" alt="Nome">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
             </div>
             <div class="grupo">
                 <img src="imagem/nascimento.png" alt="Data de Nascimento">
@@ -146,11 +149,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="grupo">
                 <img src="imagem/peso.png" alt="Peso">
-                <input type="text" name="peso" id="peso" placeholder="Peso (kg)" required>
+                <input type="text" name="peso" id="peso" placeholder="Digite seu peso (kg)" required>
             </div>
             <div class="grupo">
                 <img src="imagem/altura.png" alt="Altura">
-                <input type="text" name="altura" id="altura" placeholder="Altura (cm)" required>
+                <input type="text" name="altura" id="altura" placeholder="Digite sua altura (cm)" required>
             </div>
             <div class="grupo">
                 <label for="alergias">Alguma alergia? </label> 
@@ -160,8 +163,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="informacoes">Outras informações </label>
                 <input type="text" name="informacoes" id="informacoes"><br><br>
             </div>
-            <button type="submit">Cadastrar</button>
-        </form>
+            <button type="submit">Cadastre-se</button> 
+        </form>  <p>______________ ou ______________ </p>   <a href="conta.php" style="text-decoration: none; font-size: 1.5em; color: blue;">Já tem uma conta?</a>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {

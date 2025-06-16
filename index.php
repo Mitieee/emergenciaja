@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['emergencia'])) {
     if ($stmt->execute()) {
         $id_emergencia = $stmt->insert_id;
         $_SESSION['id_emergencia'] = $id_emergencia;
-        header("Location: usuario1.php");
+        header("Location: usuario.php");
         exit();
     } else {
         $erro = "Erro ao registrar emergência: " . $stmt->error;
@@ -92,10 +92,12 @@ $conn->close();
                 .erro {
             color: red;
         }
+        
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="imagem/emergenciaja.png" alt="emergenciaja" style="width: 150px; height: 80px; ">
         <?php if ($usuario) { ?>
             <h2>Informações do Usuário</h2>
              <p><strong>E-mail:</strong> <?= htmlspecialchars($usuario['email']); ?></p>
@@ -107,7 +109,6 @@ $conn->close();
         echo htmlspecialchars(date('d/m/Y', strtotime($usuario['data_nascimento'])));
     }
 ?>
-</p>
             <p><strong>Tipo:</strong> <?= htmlspecialchars($usuario['tipo_sanguineo']); ?></p>
             <p><strong>Peso:</strong> <?= number_format(floatval($usuario['peso']), 2, ',', '.'); ?> kg</p>
             <p><strong>Altura:</strong> <?= number_format(floatval($usuario['altura']), 2, ',', '.'); ?> m</p>

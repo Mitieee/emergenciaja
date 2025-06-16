@@ -87,11 +87,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             text-decoration: none;
             color: inherit;
         }
+        p{color: gray;
+}
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="cadastro.php" style="text-decoration: none; font-size: 1.5em; color: green;">Cadastre-se</a> <br>
+   <div class="container">  <img src="imagem/emergenciaja.png" alt="emergenciaja" style="width: 150px; height: 80px; ">
         <h2> Login</h2>
         <?php if (isset($error)): ?>
             <div class="error"><?php echo $error; ?></div>
@@ -99,15 +101,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="POST" action="conta.php">
             <div class="grupo">
                 <img src="imagem/email.png" alt="E-mail">
-                <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
             </div>
             <div class="grupo">
                 <img src="imagem/senha.png" alt="Senha">
-                <input type="password" name="senha" id="senha" placeholder="Sua senha" required>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit">Login</button>
         </form>
-     <Br>   <a href="senha.php" style="text-decoration: none; color: gray;">Esqueci minha senha</a>
+     <Br>   <a href="senha.php" style="text-decoration: none; ">Esqueceu a senha?</a> <p>______________ ou ______________ </p> <a href="cadastro.php" style="text-decoration: none; font-size: 1.5em; color: blue;">Criar nova conta</a> 
     </div>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
