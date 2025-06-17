@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+require_once(".env.php");
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['latitude']) && isset($_POST['longitude']) && isset($_POST['atualizar_localizacao'])) {
     if (!isset($_SESSION['id_usuario'])) {
