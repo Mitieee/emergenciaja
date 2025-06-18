@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-require_once(".env.php");
+require_once("env.php");
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['latitude_atendente']) && isset($_POST['longitude_atendente']))
  {
