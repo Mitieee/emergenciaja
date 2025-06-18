@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+require_once("env.php");
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
