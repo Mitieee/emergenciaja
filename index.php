@@ -189,19 +189,19 @@ $conn->close();
         function mostrarMensagemPreDefinida() {
             const tipoEmergencia = document.querySelector('input[name="emergencia"]:checked');
             const mensagens = {
-                'POLICIA 190': 'Chamo a polícia. ',
+                'POLÍCIA 190': 'Chamo a polícia. ',
                 'BOMBEIRO 193': 'Estou em um local com incêndio. Necessito de bombeiros.',
                 'SAMU 192': 'Estou com uma emergência médica. Preciso de ajuda urgente.',
                 'GUARDA MUNICIPAL 153': 'Estou com uma emergência. Preciso de apoio imediato.',
-                'POLICIA CIVIL 199': 'Estou com uma emergência. Preciso de atendimento da Polícia Civil.',
-                'DISQUE DENUNCIA 181': 'Quero fazer uma denúncia anônima.',               
+                'POLÍCIA CIVIL 199': 'Estou com uma emergência. Preciso de atendimento da Polícia Civil.',
+                'DISQUE DENÚNCIA 181': 'Quero fazer uma denúncia anônima.',               
                 'DIREITOS HUMANOS 100': 'Estou em uma situação de violação de direitos. Preciso de ajuda.',
                 'DELEGACIA DA MULHER 180': 'Estou em situação de violência. Preciso de apoio da Delegacia da Mulher.',
                 'CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141': 'Preciso conversar. Estou em sofrimento emocional.',
-                'DELEGACIA ESPECIALIZADA NO ATENDIMENTO AS MULHERES 3462-6700': 'Estou em situação de risco. Preciso de ajuda especializada.',
+                'DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÁS MULHERES 3462-6700': 'Estou em situação de risco. Preciso de ajuda especializada.',
                 'CENTRAL DA PESSOA IDOSA 3236-1100': 'Preciso de atendimento relacionado à pessoa idosa.',
                 'DEFESA CIVIL 3476-3400': 'Estou em uma situação de risco. Preciso da Defesa Civil.',
-                'PLANTAO 24HS (51) 99322-5764': 'Estou em emergência. Preciso de ajuda imediata.'
+                'PLANTÃO 24HS (51) 99322-5764': 'Estou em emergência. Preciso de ajuda imediata.'
             };
             if (tipoEmergencia) {
                 document.getElementById('mensagem').innerText = mensagens[tipoEmergencia.value] || '';
