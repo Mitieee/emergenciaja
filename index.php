@@ -121,7 +121,7 @@ $conn->close();
         <h2>Chamada de Emergência</h2>
         <?php if (isset($erro)) { echo "<p class='erro'>$erro</p>"; } ?>
         <form action="index.php" method="POST">
-            <input type="radio" id="POLÍCIA 190" name="emergencia" value="POLÍCIA 190" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="POLÍCIA 190" name="emergencia" value="POLICIA 190" onclick="mostrarMensagemPreDefinida()">
             <label for="POLÍCIA 190"><img class="img" src="imagem/policia.png" alt="POLÍCIA 190" title="POLÍCIA 190">
             </label>
             <input type="radio" id="BOMBEIRO 193" name="emergencia" value="BOMBEIRO 193" onclick="mostrarMensagemPreDefinida()">
