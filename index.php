@@ -177,15 +177,6 @@ $conn->close();
         </form>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var campos = ["telefone", "nome", "data_nascimento", "tipo", "peso", "altura", "alergias", "informacoes"];
-            campos.forEach(function (campo) {
-                var valor = localStorage.getItem(campo);
-                if (valor) {
-                    document.getElementById("usuario-" + campo).textContent = valor;
-                }
-            });
-        });
         function mostrarMensagemPreDefinida() {
             const tipoEmergencia = document.querySelector('input[name="emergencia"]:checked');
             const mensagens = {
