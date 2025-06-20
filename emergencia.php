@@ -68,7 +68,7 @@ if (isset($_GET['obter_localizacao_usuario'])) {
             WHERE id = ? AND id_usuario IN 
             (SELECT id_usuario FROM emergencias WHERE id = ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $id_emergencia);
+    $stmt->bind_param("ii", $id_emergencia, $id_emergencia);
     $stmt->execute();
     $result = $stmt->get_result();
     $localizacao = $result->fetch_assoc();
