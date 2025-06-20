@@ -258,13 +258,13 @@ $conn->close();
         }
                         if (!marcaEmergencia) {
                             marcaEmergencia = new google.maps.Marker({
-                                position: coordenadas,
+                                position: novaPosicao,
                                 map: mapa,
                                 title: "Você está aqui"
                             });
                             new google.maps.InfoWindow({ content: "Você está aqui" }).open(mapa, marcaEmergencia);
                         } else {
-                            marcaEmergencia.setPosition(coordenadas);
+                            marcaEmergencia.setPosition(novaPosicao);
                         }
                     },
                     (erro) => console.error("Erro ao obter localização: ", erro),
