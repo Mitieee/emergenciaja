@@ -136,11 +136,11 @@ $conn->close();
             <label for="GUARDA MUNICIPAL 153">
                 <img class="img" src="imagem/guardamunicipal.jpg" alt="GUARDA MUNICIPAL 153" title="GUARDA MUNICIPAL 153">
             </label>
-            <input type="radio" id="POLICIA CIVIL 199" name="emergencia" value="POLÍCIA CIVIL 199" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="POLICIA CIVIL 199" name="emergencia" value="POLICIA CIVIL 199" onclick="mostrarMensagemPreDefinida()">
             <label for="POLÍCIA CIVIL 199">
                 <img class="img" src="imagem/policiacivil.jpg" alt="POLÍCIA CIVIL 199" title="POLÍCIA CIVIL 199">
             </label>
-            <input type="radio" id="DISQUE DENUNCIA 181" name="emergencia" value="DISQUE DENÚNCIA 181" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="DISQUE DENUNCIA 181" name="emergencia" value="DISQUE DENUNCIA 181" onclick="mostrarMensagemPreDefinida()">
             <label for="DISQUE DENÚNCIA 181">
                 <img class="img" src="imagem/disquedenúncia.jpg" alt="DISQUE DENÚNCIA 181" title="DISQUE DENÚNCIA 181">
             </label>
@@ -152,11 +152,11 @@ $conn->close();
             <label for="DELEGACIA DA MULHER 180">
                 <img class="img" src="imagem/delegaciamulher180.png" alt="DELEGACIA DA MULHER 180" title="DELEGACIA DA MULHER 180">
             </label>
-            <input type="radio" id="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141" name="emergencia" value="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141" name="emergencia" value="CENTRO DE VALORIZACAO DA VIDA (CVV) 141" onclick="mostrarMensagemPreDefinida()">
             <label for="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141">
                 <img class="img" src="imagem/cvv.avif" alt="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141" title="CENTRO DE VALORIZAÇÃO DA VIDA (CVV) 141">
             </label>
-            <input type="radio" id="DELEGACIA ESPECIALIZADA NO ATENDIMENTO AS MULHERES 3462-6700" name="emergencia" value="DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÀS MULHERES 3462-6700" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÀS MULHERES 3462-6700" name="emergencia" value="DELEGACIA ESPECIALIZADA NO ATENDIMENTO AS MULHERES 3462-6700" onclick="mostrarMensagemPreDefinida()">
             <label for="DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÀS MULHERES 3462-6700">
                 <img class="img" src="imagem/delegaciadamulher.png" alt="DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÀS MULHERES 3462-6700" title="DELEGACIA ESPECIALIZADA NO ATENDIMENTO ÀS MULHERES 3462-6700">
             </label>
@@ -168,7 +168,7 @@ $conn->close();
             <label for="DEFESA CIVIL 3476-3400">
                 <img class="img" src="imagem/defesacivil.jpeg" alt="DEFESA CIVIL 3476-3400" title="DEFESA CIVIL 3476-3400">
             </label>
-            <input type="radio" id="PLANTAO 24HS (51) 99322-5764" name="emergencia" value="PLANTÃO 24HS (51) 99322-5764" onclick="mostrarMensagemPreDefinida()">
+            <input type="radio" id="PLANTAO 24HS (51) 99322-5764" name="emergencia" value="PLANTAO 24HS (51) 99322-5764" onclick="mostrarMensagemPreDefinida()">
             <label for="PLANTÃO 24HS (51) 99322-5764">
                 <img class="img" src="imagem/plantão.jpg" alt="PLANTÃO 24HS (51) 99322-5764" title="PLANTÃO 24HS (51) 99322-5764">
             </label>
